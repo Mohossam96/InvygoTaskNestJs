@@ -24,7 +24,7 @@ export class SeedService implements OnModuleInit {
       return;
     }
 
-    const catalogPath = path.join('D:\\catalog.json');
+    const catalogPath = path.join(__dirname,'catalog.json');
     const products = JSON.parse(fs.readFileSync(catalogPath, 'utf8'));
 
     try {
